@@ -21,5 +21,6 @@ pipeline {
             steps {
                 sh 'kubectl rollout restart deployment backend -n portfolio'
             }
+         }
     }
 }
