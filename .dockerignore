@@ -1,0 +1,34 @@
+# Node dependencies
+node_modules
+npm-debug.log
+yarn.lock
+
+# Git
+.git
+.gitignore
+
+# Environment files
+.env
+.env.*
+
+# Logs
+logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Docker files
+Dockerfile
+docker-compose.yml
+
+# Tests & docs
+test
+tests
+docs
+README.md
+
+# Build output (if any)
+dist
+build
