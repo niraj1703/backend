@@ -4,9 +4,10 @@
   "description": "basic",
   "main": "index.js",
   "type": "module",
-  "scripts": {
-    "start": "nodemon -r dotenv/config src/index.js"
-  },
+ "scripts": {
+  "start": "node src/index.js",
+  "dev": "nodemon -r dotenv/config src/index.js"
+},
   "keywords": [
     "node",
     "chai"
