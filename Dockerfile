@@ -1,12 +1,15 @@
-From node:18-alpine
+FROM node:18-alpine
 
 WORKDIR /app
 
+# Copy only package files first (better caching)
 COPY package*.json ./
 
-RUN npm install  
+# Install only production dependencies
+RUN npm install --production
 
-copy . .
+# Copy remaining source code
+COPY . .
 
 EXPOSE 3000
 
