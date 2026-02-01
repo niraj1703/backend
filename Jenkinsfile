@@ -4,7 +4,7 @@ pipeline {
     stages{
         stage('Build Docker Image'){
             steps {
-                sh 'docker build-t ni969/backend-app:latest .'
+                sh 'docker build -t ni969/backend-app:latest .'
             }
         }
         stage('Push Image') {
