@@ -17,5 +17,9 @@ pipeline {
                 sh 'kubectl apply -f k8s/'
             }
         }
+         stage('Restart Backend Deployment') {
+            steps {
+                sh 'kubectl rollout restart deployment backend -n portfolio'
+            }
     }
 }
