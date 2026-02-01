@@ -1,4 +1,4 @@
-pipeline{
+pipeline {
     agent any 
 
     stages{
@@ -18,7 +18,7 @@ pipeline{
             }
         }
         stage ('Deploy to Kubernetes'){
-            step{
+            steps{
                 sh 'kubectl apply -f k8s/'
             }
         }
